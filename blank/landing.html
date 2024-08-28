@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCare</title>
+    <link rel="stylesheet" href="landing.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+   <nav class="section-container nav-container">
+      <div class="nav-logo">Open<span>Care</span></div>
+      <ul class="nav-links">
+        <li class="link"><a href="landing.html">Home</a></li>
+        <li class="link"><a href="about.html">About us</a></li>
+        <li class="link"><a href="services.html">Services</a></li>
+        <li class="link"><a href="comments.html">Comments</a></li>
+        <li class="link"><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="btn" id="contact-btn">Contact us</button>
+   </nav>
+   <nav class="section-container header-container">
+      <div class="header-content">
+         <h1>OpenCare</h1>
+         <p>
+            Welcome, where exceptional patient experiences are our priority.
+            With compassionate care, state-of-the-art facilities, and a 
+            patient-centered approach, we're dedicated to your well-being.
+            Trust us with your health and experience the difference.
+         </p>
+         <button class="btn"><a href="project.html">Checkup</a></button>
+         <!-- Display the login message -->
+         <p id="login-message"></p>
+      </div>
+      <div class="header-form">
+         <form>
+           <h4>Book Now</h4>
+           <input type="text" placeholder="First Name">
+           <input type="text" placeholder="Last name">
+           <input type="text" placeholder="Address">
+           <input type="text" placeholder="Phone No">
+           <button class="btn form-btn">Book Appointment</button>
+         </form>
+      </div>
+   </nav>
+</header>
+
+<script>
+    // Check if the 'login' parameter exists in the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const loginValue = urlParams.get('login');
+
+    // If 'login' is 1, display a message
+    if (loginValue === '1') {
+        document.getElementById('login-message').textContent = 'You have successfully logged in!';
+    }
+</script>
+
+</body>
+</html>

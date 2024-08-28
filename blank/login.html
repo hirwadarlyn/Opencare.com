@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form method="get" action="landing.html">
+            <div class="txt_field">
+                <input type="text" name="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <input type="hidden" name="login" value="1"> <!-- Pass the value `login=1` -->
+            <div class="pass">Forgot Password</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="signup.html">signup</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
